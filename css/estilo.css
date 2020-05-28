@@ -4,13 +4,56 @@
     margin: 0;
 }
 
-body{
-    background-image: url(../img/laundry.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
+/* Navegador */
+
+.menu{
+    width: 90%;
+    max-width: 1280px;
+    margin: auto;
+    background: rgb(72, 231, 205);
+    padding: 9px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo{
-    width: 160px;
-    height: 40px;
+    margin-top: 10px;
+    width: 150px;
+    height: 35px;
+}
+
+.navi li{
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 20px;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Inicio */
+
+#inicio{
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    margin: auto;
+}
+
+.izquierda{
+    background-color: aqua;
+    width: 30%;
+    padding: 65px 75px;
+    text-align: center;
+}
+
+.imgdropi{
+    width: 370px;
+}
+.derecho{
+    background-color: rgb(117, 207, 26);
+    height: 600px;
+}
+
+.imglava{
+     width: 760px;
 }
