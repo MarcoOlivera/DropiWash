@@ -1,41 +1,139 @@
+<!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dropi Wash</title>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@200;300;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilo.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="css/estilos.css" type="text/css" charset="utf-8" />
+    <title>Dropi Wash Lavandería</title>
 </head>
 
 <body>
-
-
     <header>
-        <div class="menu">
-            <img src="img/logo.png" alt="logo" class="logo">
-            <nav>
-                <ul class="navi">
-                    <li><a href=""></a>INICIO</li>
-                    <li><a href=""></a>SERVICIOS</li>
-                    <li><a href=""></a>AAA</li>
-                    <li><a href=""></a>AAA</li>
-                </ul>
-            </nav>
+        <div class="nav">
+            <img src="images/dropi.svg" alt="Logo Lavandería" id="logo">
+            <label for="toggle">&#9776</label>
+            <input type="checkbox" id="toggle" />
+            <ul id="navigation">
+                <li class="inicio"><a href="#logo"><span>Inicio</span></a></li>
+                <li class="nosotros"><a href="#nosotros"><span>Nosotros</span></a></li>
+                <li class="servicios"><a href="#servicios"><span>Servicios</span></a></li>
+                <li class="chat"><a href="https://m.me/1700760783505389"><span>Chat</span></a></li>
+                <li class="fono"><a href="tel:+5151304426"><span>Llamanos</span></a></li>
+            </ul>
+        </div>
+        </div>
+
+        <div id="inicio">
+            <div class="inicio-left-col">
+                <div class="header-text">
+                    <img src="images/logo.svg" alt="Lavandería Dropi Wash" width="400px">
+                    <h1>Lavandería</h1>
+                    <p>Brindamos un servicio de calidad en el área de lavandería Comercial e Industrial utilizando la mejor tecnología y haciendo uso de métodos y procedimientos establecidos para el cuidado y satisfacción de las necesidades de nuestros clientes.</p>
+                    <a href="#nosotros"><button class="connon-btn">Nuestros Servicio</button></a>
+                    <div class="line">
+                        <span class="line-1"></span><br>
+                        <span class="line-2"></span><br>
+                        <span class="line-3"></span><b>
+                    </div>
+                </div>
+            </div>
+            <div class="inicio-right-col">
+                <img src="images/laundry.svg" alt="Lavandería" class="lavando">
+            </div>
         </div>
     </header>
 
-    <section id="inicio">
-        <div class="izquierda">
-            <p>Lavandería</p>
-            <img class="imgdropi" src="img/dropi.png" alt="Lavandería en Juliaca">
-            <a href="#servicios">Nuestros Servicios</a>
+    <section id="nosotros">
+        <div class="nosotros-left-col">
+            <img src="images/about.png" alt="">
         </div>
+        <div class="nosotros-right-col">
+            <div class="about-text">
+                <h1>Dropi Wash</h1>
+                <span class="square"></span>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi saepe quam ut nisi animi cum
+                    ratione vitae corporis distinctio, repudiandae, necessitatibus reprehenderit nostrum natus magnam.
+                    Ab nihil odit labore eum!</p><br>
 
-        <div class="derecha">
-            <img class="imglava" src="img/laundry.svg" alt="Lavanderia en Juliaca">
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span><b>
+                </div>
+
+                <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam harum rerum veritatis eos modi
+                    et numquam.</h2>
+                <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h3>
+            </div>
         </div>
-
     </section>
 
+
+    <!--Waves Container-->
+    <div class="cont-waves">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(235,245,255,.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(160,230,255,.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(160,230,255,.5)" />
+            </g>
+        </svg>
+    </div>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            var d = 300;
+            $('#navigation a').each(function () {
+                $(this).stop().animate({
+                    'marginTop': '-80px'
+                }, d += 150);
+            });
+
+            $('#navigation > li').hover(
+                function () {
+                    $('a', $(this)).stop().animate({
+                        'marginTop': '-2px'
+                    }, 200);
+                },
+                function () {
+                    $('a', $(this)).stop().animate({
+                        'marginTop': '-80px'
+                    }, 200);
+                }
+            );
+        });
+    </script>
+
+    <!-- <script type="text/javascript">
+        $(function() {
+            $('#navigation a').stop().animate({
+                'marginLeft':'-85px'
+            },1000);
+
+            $('#navigation > li').hover(
+                function () {
+                    $('a',$(this)).stop().animate({
+                        'marginLeft':'-2px'
+                    },200);
+                },
+                function () {
+                    $('a',$(this)).stop().animate({
+                        'marginLeft':'-85px'
+                    },200);
+                }
+            );
+        });
+    </script> -->
 </body>
+
 </html>
