@@ -59,7 +59,7 @@ button{
     right: 0;
     bottom: 0;
     background-color: #FCFEFF;
-    z-index: 10;
+    z-index: 20;
     display: flex;
 }
 
