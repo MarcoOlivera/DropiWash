@@ -483,7 +483,7 @@ div[class^="bubble-"] {
         margin: 0;
     }
     .inicio-img{
-        margin: 1rem auto;
+        margin: 2rem auto;
         width: 60%;
     }
     .inicio-text{
@@ -494,6 +494,7 @@ div[class^="bubble-"] {
         margin: 0 auto;
     }
     .inicio-dere img{
+        margin-top: 3rem;
         width: 100%;
     }
     .inicio .bajar{
