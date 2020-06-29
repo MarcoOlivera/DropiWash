@@ -508,13 +508,13 @@ div[class^="bubble-"] {
         margin-right: 1rem;
     }
     .site-header .logo{
-        flex:1;
+        flex: 1;
     }
     .site-header .icon-logo{
         width:100%;
     }
     .site-header .logo a {
-        padding: 0
+        padding: 0;
     }
     .site-header .main-nav {
         overflow: auto;
