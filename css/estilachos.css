@@ -309,7 +309,7 @@ button{
 /* Waves en movimiento */
 
 .cont-waves {
-    position: sticky;
+    position: fixed;
     background: #7CC8FD55;
     bottom: 10px;
     left: 0;
